@@ -1,12 +1,11 @@
 Package: eltoolkit
-Title: What the Package Does (One Line, Title Case)
+Title: Erwin Lares' Toolkit for R 
 Version: 0.0.0.9000
 Authors@R: 
     person("Erwin", "Lares", , "erwin.lares@wisc.edu", role = c("aut", "cre"),
            comment = c(ORCID = "000000023284828X"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: A collection of functions that presumably makes your life easier when working with R.
+License: Apache License (>= 2)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
