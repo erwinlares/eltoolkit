@@ -2,7 +2,11 @@
 "_PACKAGE"
 
 ## usethis namespace: start
-#' @importFrom janitor clean_names
-#' @importFrom readr read_csv
+#' @importFrom fs dir_create
+#' @importFrom fs dir_delete
+#' @importFrom glue glue
+#' @importFrom purrr map
+#' @importFrom purrr map2
+#' @importFrom stringr str_detect
 ## usethis namespace: end
 NULL
