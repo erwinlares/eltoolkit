@@ -17,10 +17,9 @@ knitr::opts_chunk$set(
 # eltoolkit
 
 <!-- badges: start -->
-[![R-CMD-check](https://github.com/erwinlares/eltoolkit/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/erwinlares/eltoolkit/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of eltoolkit is to provide its users with functions that makes their lives easier.
+The goal of eltoolkit is to provide its users with helpers functions that would make their lives easier.
 
 ## Installation
 
@@ -33,11 +32,16 @@ devtools::install_github("erwinlares/eltoolkit")
 
 ## Example
 
-This is how you read a csv file into your environment *and* clean the variable names.
+This is how you read a csv file into your environment *and* clean the variable names in one fell swoop.
 
 ```{r example}
 library(eltoolkit)
 data <- rac_csv("data.csv")
 ```
 
+You want to create a new project with a basic template that includes `data`, `images`, `plots`, and `scripts`. This will create the project "myproject" place it as a subdirectory of `Desktop` and name it "my project". It will also create a new R session and open the project. 
 
+```{r example2}
+library(eltoolkit)
+create_project2("~/Desktop/myproject")
+```
