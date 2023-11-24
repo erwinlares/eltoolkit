@@ -8,9 +8,9 @@ create_project2 <- function(new_project, ...){
     dots.args <- list(...)
     if(length(dots.args) > 0)
     {
-        dots.args <- purrr::map2("/", dots.args, glue)
-        dots.args <- purrr::map2(new_project, dots.args, glue)
-        purrr::map(dots.args, dir_create)
+        dots.args <- purrr::map2("/", dots.args, glue::glue)
+        dots.args <- purrr::map2(new_project, dots.args, glue::glue)
+        purrr::map(dots.args, fs::dir_create)
     }
     usethis::proj_activate(new_project)
 }
