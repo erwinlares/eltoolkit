@@ -12,6 +12,7 @@ A collection of functions that presumably makes your life easier when working wi
 Useful links:
 \itemize{
   \item \url{https://github.com/erwinlares/eltoolkit}
+  \item \url{https://erwinlares.github.io/eltoolkit/}
   \item Report bugs at \url{https://github.com/erwinlares/eltoolkit/issues}
 }
 
