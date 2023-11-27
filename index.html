@@ -72,16 +72,28 @@
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"erwinlares/eltoolkit"</span><span class="op">)</span></span></code></pre></div>
 </div>
 <div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+<h2 id="examples">Examples<a class="anchor" aria-label="anchor" href="#examples"></a>
 </h2>
+<div class="section level3">
+<h3 id="how-to-use-the-rac_csv-function">How to use the <code>rac_csv()</code> function<a class="anchor" aria-label="anchor" href="#how-to-use-the-rac_csv-function"></a>
+</h3>
 <p>This is how you read a csv file into your environment <em>and</em> clean the variable names in one fell swoop.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/erwinlares/eltoolkit" class="external-link">eltoolkit</a></span><span class="op">)</span></span>
 <span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/rac_csv.html">rac_csv</a></span><span class="op">(</span><span class="st">"data.csv"</span><span class="op">)</span></span></code></pre></div>
-<p>You want to create a new project with a basic template that includes <code>data</code>, <code>images</code>, <code>plots</code>, and <code>scripts</code>. This will create the project “myproject” place it as a subdirectory of <code>Desktop</code> and name it “my project”. It will also create a new R session and open the project.</p>
+</div>
+<div class="section level3">
+<h3 id="how-to-use-the-create_project2-function">How to use the <code>create_project2</code> function<a class="anchor" aria-label="anchor" href="#how-to-use-the-create_project2-function"></a>
+</h3>
+<p>To create a new project with a basic template that includes <code>data</code>, <code>images</code>, <code>plots</code>, and <code>scripts</code>. This will create a new project, place it as a subdirectory of <code>Desktop</code>, and name it “myproject”. It will also create a new R session and open the project.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/erwinlares/eltoolkit" class="external-link">eltoolkit</a></span><span class="op">)</span></span>
 <span><span class="fu"><a href="reference/create_project2.html">create_project2</a></span><span class="op">(</span><span class="st">"~/Desktop/myproject"</span><span class="op">)</span></span></code></pre></div>
+<p><code><a href="reference/create_project2.html">create_project2()</a></code> support passing additional character string arguments. When you do that, it will create additional folders with the names of the arguments. You may pass as many additional argument and you need. For instance, to create a <code>reports</code> folder, run the code below.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/erwinlares/eltoolkit" class="external-link">eltoolkit</a></span><span class="op">)</span></span>
+<span><span class="fu"><a href="reference/create_project2.html">create_project2</a></span><span class="op">(</span><span class="st">"~/Desktop/myproject"</span>, <span class="st">"reports"</span><span class="op">)</span></span></code></pre></div>
+</div>
 </div>
 </div>
   </main><aside class="col-md-3"><div class="links">
